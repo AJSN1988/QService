@@ -1,0 +1,764 @@
+@import "custom";
+
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+p, .annotation {
+    color: $grey;
+}
+
+.toggler-logo {
+    img {
+        width: 140px;
+        height: 25px;
+    }
+}
+
+.navbar {    
+    background-color: $white;
+    -webkit-box-shadow: 0px 6px 8px -8px $grey;
+    -moz-box-shadow: 0px 6px 8px -8px $grey;
+    box-shadow: 0px 6px 8px -8px $grey;
+    .navbar-toggler {
+        border: none;
+    }        
+}
+
+.collapse.show {
+    text-align: center;
+}
+
+.promo-section {
+    height: 500px;
+    padding-top: 67px;    
+    .container {
+        height: 100%;
+        background: url(../img/baclground-1110.png) 100% 0% no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .row {
+        position: relative;
+        height: 100%;
+    }
+}
+
+.promo-service {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);    
+    p {
+        margin-bottom: 2rem;
+    }
+}
+
+.promo-form {
+    input {
+        width: 230px !important;
+        padding: 0.675rem 0.8625rem;
+        border-radius: 2px 0 0 2px;
+        height: auto;
+        background-color: #f9f9f9;
+        box-shadow: inset 0 4px 5px 1px #e5e5e5
+
+    }
+    button {
+        color: $white;
+        padding: 0.6875rem 1.5rem;
+        font-weight: 700;
+        position: relative;
+
+        $border: 1px;
+        background: linear-gradient(to right, #f38381, #fbde89);
+        background-clip: padding-box;
+        border: solid $border transparent;
+        border-radius: 0 2px 2px 0;
+      
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0; right: 0; bottom: 0; left: 0;
+          z-index: -1;
+          margin: -$border;
+          border-radius: inherit;
+          background: linear-gradient(to right, #f38381, #fbde89);
+        }
+        &:hover{
+            $border: 1px;
+            background: linear-gradient(to right, #fbde89, #f38381);
+            background-clip: padding-box;
+            border: solid $border transparent;
+            border-radius: 0 2px 2px 0;
+      
+            &:before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            z-index: -1;
+            margin: -$border;
+            border-radius: inherit;
+            background: linear-gradient(to right, #fbde89, #f38381);
+            }
+        }
+    }
+}
+
+.section-header {
+    padding: 0.625rem 0;
+    max-width: 250px;
+    h5 {
+        border-top: 3px solid #878787;
+        margin-right: 60px;
+        padding-top: 15px;
+    }
+}
+
+.device-wrapper {
+    height: 270px;
+    text-align: center;
+    margin-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    -webkit-box-shadow: -2px 8px 19px 4px rgba(212, 211, 211, 0.16);
+    -moz-box-shadow: -2px 8px 19px 4px rgba(212, 211, 211, 0.16);
+    box-shadow: -2px 8px 19px 4px rgba(212, 211, 211, 0.16);
+    transition: all 0.4s ease-out 0s;
+    .device-img {
+        margin-bottom: 1.25rem;
+        padding-top: 1.25rem;
+    }
+    .annotation {
+        padding: 0 1.625rem;
+    }
+    &:hover {
+        -webkit-box-shadow: 0px 10px 30px 5px #d4d3d3;
+        -moz-box-shadow: 0px 10px 30px 5px #d4d3d3;
+        box-shadow: 0px 10px 30px 5px #d4d3d3;
+    }
+}
+
+.about-section {
+    padding-top: 6.25rem; 
+}
+
+.about-logo {
+    background: url(../img/about-background.jpg) 0% 0% no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+}
+
+.about-text {
+    background-color: $mainPink;
+    height: 450px;
+    position: relative;
+    h2, p, .regards {
+        color: $white;
+    }
+    .about-text-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        padding: 0 1.563rem;
+    }
+    .regards {
+        margin-top: 3.125rem;
+    }
+}
+
+.price-section {    
+    .container {
+        background-color: $lightGreyBackground;
+    }
+    .section-header {
+        padding-top: 6.25rem;
+    }
+    .price-plates {
+        padding-bottom: 6.25rem;
+        margin-top: 1.25rem;
+    }
+}
+
+.diag-wrapper {
+    padding-right: 0;
+    .diag-price {
+        height: 500px;
+        background-color: $white;
+        text-align: center;
+        position: relative;
+        .diag-info {
+            text-align: left;
+            padding: 0 1.875rem;
+        }
+        .diag-cost {
+            position: absolute;
+            bottom: 22px;
+            right: 30px;
+        }
+    }    
+}
+
+.prices-wrapper {
+    .cameras-price {
+        height: 200px;
+        background-color: $white;
+        margin-bottom: 0.9375rem;
+        position: relative;
+        .cameras-info {
+            vertical-align: top;
+            padding: 1.875rem;
+        }
+        .cameras-cost {
+            position: absolute;
+            bottom: 22px;
+            right: 30px;
+        }
+    }
+    .phones-price {
+        height: 285px;
+        background-color: $white;
+        .phones-img {
+            padding: 1.875rem 0;
+        }
+        .phones-info {
+            padding: 1.875rem 1.875rem 1.875rem 0;
+            vertical-align: top;
+        }
+        .phones-cost {
+            position: absolute;
+            bottom: 22px;
+            right: 40px;
+        }
+    }
+    .warr-wrapper {
+        padding-left: 0;
+        .warr-price {
+            height: 285px;
+            background-color: $white;
+            .warr-img {
+                text-align: center;
+            }
+            .warr-info {
+                padding: 0 1.875rem;
+            }
+        }
+    }
+    
+}
+
+.clients-section {
+    background: url(../img/rep-bg.png) 0% 0% no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: left;
+    height: 500px;
+    padding-top: 5.625rem;
+    margin-top: -3.75rem;
+    .section-header {
+        margin-bottom: 0.9375rem;
+    }
+}
+
+.owl-nav {
+    text-align: right !important;
+}
+
+.feedback-wrapper {
+    .feedback {
+        height: 250px;
+        position: relative;
+        background-color: $white;
+        margin: 0.9375rem;
+         -webkit-box-shadow: 0px 0px 20px 0px rgba(243, 131, 129, 0.4);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(243, 131, 129, 0.4);
+         box-shadow: 0px 0px 20px 0px rgba(243, 131, 129, 0.4);
+         p {
+             padding: 1.25rem;
+         }
+    }
+}
+
+.client-wrapper {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    .client-photo {
+        border: 1px solid $grey;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 50px;
+    }
+    .client-name {
+        vertical-align: middle;
+        padding-left: 0.625rem;
+    }
+}
+
+.form-section {
+    padding-top: 1.875rem;
+    margin-bottom: 6.25rem;
+    .form-group {
+        z-index: 10;
+    }
+}
+
+.device-type-select {
+    position: relative;
+    z-index: 11;
+    width: 100%;
+    height: calc(1.56641rem + 2px);
+    padding: 0.25rem 0.5rem;
+    font-size: 0.71094rem;
+    line-height: 1.5;
+    border-radius: none;
+    border: 1px solid #ced4da;
+    color: #495057;
+    .default-option {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .dropdown-img {
+        position: absolute;
+        right: 10px;
+    }
+    .select-options {
+        display: none;
+        border: 1px solid #ced4da;
+        margin: 1rem -0.5625rem;
+        background-color: $white;
+        .select-options-list {
+            padding: 0;
+            margin-bottom: 0;
+            list-style: none;
+            li {
+                padding: 0.25rem 0.5rem;
+                &:hover {
+                    cursor: pointer;
+                    background-color: #dde0e3b3;
+                }
+            }
+        }
+    }
+}
+
+.form-group {
+    margin-bottom: 0;
+    .error-input-container {
+        color: $formValidateErr;
+        font-size: 0.75rem;
+        margin-bottom: 2px;
+        opacity: 0;
+    }
+    .invalid-input {
+        border-color: $formValidateErr;
+    }
+    textarea {
+        resize: none;
+    }
+    button {
+        color: $white;
+    }
+    .refresh-form-btn {
+        border: none;
+        margin-left: 1rem;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.contacts-section {
+    height: 600px;
+    background: url(../img/contacts1800p.jpg) 0% 0% no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    .contacts-container {
+        margin-top: 100px;
+        height: 400px;
+        padding-right: 0;
+        background-color: rgba(228, 228, 228, 0.86);
+        position: relative;
+        .contacts-wrapper {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding-left: 50px;
+            .contacts {
+                margin-bottom: 1.5rem;
+            }
+            span {
+                font-weight: 700;
+                font-size: 14px;
+                padding-right: 10px;
+                color: $fontGray;
+            }
+        }        
+    }
+    .map-container {
+        margin-top: 100px;
+        height: 400px;
+        padding: 0;
+    }
+}
+
+.footer {
+    height: 50px;
+    background-color: $lightGreyBackground;
+    .container {
+        position: relative;
+    }
+    .footer-logo {
+        padding-right: 1.875rem;
+    }
+    .footer-navs {
+        vertical-align: middle;
+        .list-inline {
+            margin: 0;
+        }
+        a {
+            color: $grey;
+            font-size: 0.75rem;
+            &:hover {
+                color: rgba(0, 0, 0, 0.7);
+                text-decoration-line: none;
+            }
+        }
+    }
+    .footer-copyright {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        color: $grey;
+        font-size: 0.6875rem;
+    }
+}
+
+.scroll-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 3px solid $white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: url(../img/up-chevron-button.png) 0% 0% no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 15;
+    &:hover {
+        border-color: $grey;
+        cursor: pointer;
+    }
+}
+
+
+// Adaptive mixins
+
+@include media-breakpoint-only(xs) {
+    
+}
+
+@include media-breakpoint-only(md) {
+    
+    .phone-num, .location-addr {
+        display: none;
+    }
+
+    .phone {
+        padding-right: 1rem !important;
+    }    
+
+    .promo-section {
+        height: 650px;        
+    }
+
+    .promo-service {
+        padding-top: 100px;
+        transform: none;
+    }
+}
+
+@include media-breakpoint-only(lg) {
+
+}
+
+// Down breakpoint
+
+@include media-breakpoint-down(xs) {
+    
+    .promo-section {
+        margin-top: 45px;
+        height: 450px;
+        .container {
+            background: url(../img/background-320-400.png) 50% 0% no-repeat !important;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+           background-size: cover;
+       }
+       .promo-form {
+           .form-group {
+               width: 85%;
+               input {
+                   width: 100% !important;
+                   margin: 0;
+               }
+           }
+           button {
+               margin-top: 20px;
+           }
+       }
+    }
+
+    .about-logo {
+        background: url(../img/about-background_xs.jpg) 0% 0% no-repeat;
+        height: 400px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .about-text {
+        height: 650px;
+    }
+
+    .diag-wrapper {
+        .diag-price {
+            height: auto !important;
+            .diag-img {
+                display: inherit !important;
+            }
+            .diag-info {
+                padding-bottom: 3.75rem;
+                padding-top: 0 !important;
+            }
+        }        
+    }
+
+    .prices-wrapper {
+        .cameras-price {
+            height: auto;
+            .cameras-img {
+                display: inherit !important;
+                text-align: center;
+            }
+            .cameras-info {
+                padding-bottom: 3.75rem;
+                padding-top: 0 !important;
+            }
+        }
+
+        .phones-price {
+            height: auto !important;
+            .phones-img {
+                display: inherit !important;
+                text-align: center;
+            }
+            .phones-info {
+                padding-bottom: 3.75rem !important;
+                display: inherit !important;
+            }
+        }
+        .warr-wrapper {
+            .warr-price {
+                height: auto !important;
+                .warr-img {
+                    display: inherit !important;
+                    text-align: center;
+                }
+                .warr-info {
+                    display: inherit !important;
+                    padding-bottom: 3.75rem !important;
+                }
+            }
+        }
+    }    
+}
+
+@include media-breakpoint-down(sm) {
+    
+    .navbar {
+        box-shadow: none;
+
+    }
+
+    .navbar-collapse {
+        text-align: center;
+        ul {
+            margin-top: 10px;
+        }
+    }
+
+    .promo-section {
+        margin-top: 33px;
+        padding-top: 0;        
+       
+    }
+
+    .promo-service {
+        text-align: center;
+        bottom: 1rem;
+        top: auto;
+        transform: none;
+    }    
+
+    .contacts-section {
+        height: auto;
+        .map-container {
+            margin-top: 0;
+            margin-bottom: 100px;
+        }
+    }
+
+    .footer {
+        height: auto;
+        .footer-logo, .footer-navs {
+            display: inherit !important;
+            text-align: center;
+        }
+        .footer-navs {
+            margin-bottom: 0.75rem;
+        }
+        .footer-logo {
+            padding-right: 0;
+        }
+        .footer-copyright {
+            padding-bottom: 0.75rem;
+            position: inherit;            
+            text-align: center;
+            top: auto;
+            right: auto;
+            transform: none;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    
+    .promo-section {
+        .container {
+            background: url(../img/background-540.png) 100% 0% no-repeat;
+            -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        }
+        .promo-service {
+            text-align: center;
+        }
+    }
+
+    .promo-form{
+        display: inline-block;
+        width: 100%;
+        .form-group {
+            display: inline-block;
+        }
+    }   
+
+    .diag-wrapper {
+        padding-right: 0.9375rem;
+        padding-bottom: 0.9375rem;
+        .diag-price {
+            height: 200px;
+            .diag-img {
+                display: table-cell;
+            }
+            img {
+                width: 200px;
+                height: 200px;
+            }
+            .diag-info {
+                display: table-cell;
+                vertical-align: top;
+                padding-top: 1.875rem;
+            }
+        }        
+    }
+
+    .prices-wrapper {
+        .phones-price {
+            height: 200px;
+            .phones-img {
+                padding: 0;
+            }
+            img {
+                width: 200px;
+                height: 200px;
+            }
+            .phones-info {
+                padding: 1.875rem;
+            }
+        }
+        .warr-wrapper {
+            padding: 0.9375rem;
+            .warr-price {
+                height: 200px;
+                .warr-img {
+                    display: table-cell;
+                }
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+                .warr-info {
+                    display: table-cell;
+                    padding: 1.875rem;
+                    vertical-align: top;
+                }
+            }
+        }
+    }   
+    
+    .contacts-wrapper {
+        padding: 0 0.625rem !important;
+    }
+}
+
+@include media-breakpoint-down(lg) {    
+    
+    .navbar-nav {
+        .nav-item {
+            font-size: 0.75rem;
+        }
+    }
+
+    .phone, .location {
+        font-size: 0.6875rem;
+    }
+    
+    .about-section {
+        margin-top: 1.875rem;
+    }
+
+    .price-section {
+        .section-header {
+            padding-top: 1.875rem;
+        }
+    }
+
+    .devices-section {
+        margin-top: 1.875rem;
+    }
+
+    
+    .annotation-wrapper {
+        margin-bottom: 90px;
+    }
+}

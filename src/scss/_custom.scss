@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Gillroy';
+    src:  url('../fonts/gilroyLight.otf') format('otf');
+}
+
+// Bootstrap vars
+
+// Colors
+
+$primary: #f38781;
+$grey:  #878787;
+$focueGray: #776f6f;
+$fontGray: #424242;
+$mainPink: #f38781;
+$lightGreyBackground: #f2f2f2;
+$formValidateErr: #ff3636;
+
+// Navbar
+
+$navbar-light-hover-color:  $primary;
+$navbar-light-active-color: $primary;
+
+$btn-box-shadow: none;
+$btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+$btn-border-radius: none;
+
+// Form inputs
+
+$input-border-radius:  none;
+$border-radius-sm: none;
+$box-shadow-sm: none;
+$input-box-shadow:  none;
+$input-focus-box-shadow: none;
+$input-focus-border-color: $focueGray;
+$input-padding-x: 0.5625rem;
+$form-feedback-invalid-color: $primary;
+$btn-box-shadow: none;
+$btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+
+// Fonts
+$font-family-sans-serif: 'Gillroy', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;;
+$font-family-base: $font-family-sans-serif !default;
+$font-weight-normal: 400 !default;
+
+$font-size-base: 0.8125rem !default; 
+
+$headings-font-weight: 700;
+
+$paragraph-margin-bottom: 0.625rem;
+
+
+
+
+// Spacers
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3)
+  ),
+  $spacers
+);
+
+@import "~bootstrap/scss/bootstrap";
+
+// Owl carousel vars
+
+$nav-font-size: 30px !important;
+$color-base: $grey;
+$nav-margin: 0 10px !default;
+$nav-color-hover: $grey;
+$nav-background-hover: $white;
+
+
+$owl-image-path: "~owl.carousel/src/img/";
+@import '~owl.carousel/src/scss/owl.carousel';
+@import '~owl.carousel/src/scss/owl.theme.default';
